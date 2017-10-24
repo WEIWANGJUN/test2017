@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 没有名字的函数
+//    function sum() {
+//
+//    }
+    // 函数表达式；
+//    var fn = function () {
+//        console.log(1)
+//    }
+//    fn();
+//    sum()
+//    oBox.onclick = function () {
+//
+//    }
+    // 自执行函数
+//    function sum() {
+//        console.log(1)
+//    }
+//    sum()
+    // 自执行函数及定义，又执行；
+    var b=(function (num) {
+        return {}
+    })(10)
+    console.log(b);// {}
+    var a = ~function () {
+        return 100;
+    }();
+   console.log(a)// -101
+    var c =+function () {
+//        return;
+   }();// NaN
+   console.log(c)
+    var d =!function () {
+
+    }();
+    console.log(d)// true
+
+    var e =-function () {
+        return 10;
+    }();
+    console.log(e);//-10
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // return
+    // 1.return 下面的代码都不再执行了，终止整个函数；
+    // 2.return 把函数的返回值返回到函数体外面；
+    function sum(num1,num2) {
+        var a = num1+num2;
+//        window.a = a;
+        // a 是不会被return出来的
+        //return  后面的内容是代表当前函数的返回值
+        // 如果没有return 出结果，那么函数默认会有一个undefined返回值；
+//         return a;
+         return {
+             name:"zhufeng"
+         };
+//        console.log(1);
+    }
+    // 函数执行结果赋值给b,函数返回值赋值给b;
+    console.log(sum(100, 200));;
+    //console.log(a)// a is not defined
+    console.log(b);
+
+</script>
+</body>
+</html>

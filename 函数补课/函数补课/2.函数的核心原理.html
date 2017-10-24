@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // js中分为基本数据类型和引用数据类型
+    // 根本区别 ： 一个操作值的，一个操作空间地址；
+    var num = 10;
+    var obj = {};
+    // 函数名字是total
+    //    function total() {
+    //        var a = "你好";
+    //        console.log(a)
+    //
+    //    }
+    //    total();// total is not defined  : total 没有被定义；
+    //    num() ; // num is not  a function
+    function total() {
+//        var a = "你好";
+//        console.log(a)
+        var a = 10;
+        a++;
+        console.log(a)
+
+    }
+//    var total = 100;
+    // 函数的定义：
+    // 1.会开辟一个堆内存；
+    // 2.把函数体中的代码当做字符串存到新开辟的堆内存中；
+    // 3.把这个地址赋值给函数名；
+
+    total()
+    total()
+    // 函数执行
+    // 1.会开辟一个新的私有作用域；
+    // 2.把代码字符串转换成真正的代码从上到下开始执行；
+
+
+
+
+
+</script>
+</body>
+</html>

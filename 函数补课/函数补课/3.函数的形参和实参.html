@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 函数的参数： 形参 实参
+    var num=100;
+    // 100 +200
+    var num1 =100;
+    var num2 = 200;
+    console.log(num1 + num2);
+    var num3 = 200;
+    var num4 = 300;
+    console.log(num3+num4);
+    function sum(num1,num2) {// 函数的一个入口
+//        console.log(num1)// 100
+//        console.log(num2)// undefined
+        // 形参被赋值的顺序和实参传进来的数值顺序是一致的；
+        // 形参没有被赋值，默认值就是undefined
+//        console.log(num1);//100
+//        num1=1000;//
+        // 任意数字和undefined运算都是NaN;
+        if(typeof num2==="undefined"){
+            num2 =0;
+        }
+        console.log(num1 + num2);
+    };
+//    sum(100,200)// 函数执行时传入的参数--> 实参
+//    sum(200,300)
+    sum(500)
+
+
+
+
+
+</script>
+</body>
+</html>
